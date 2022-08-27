@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var a = [1, 1, 2, 3, 3, 4, 5, 5, 7, 7]
+    var b = []
+    var c = []
+
+    //1：indexOf()不存在返回-1 ,存在则会返回对应索引值
+    a.forEach((item, index) => {
+      if (b.indexOf(item) == -1) {
+        b.push(item)
+      }
+    })
+    console.log(b);
+    console.log('-----------------------------------');
+    //2:includes()存在返回true
+    a.forEach((item, index) => {
+      if (!b.includes(item)) {
+        b.push(item)
+      }
+    })
+    console.log(b);
+    console.log('-----------------------------------');
+    //3:es6里的set()，set特点是里的元素是第一无二的
+    b = [...new Set(a)]
+    console.log(b);
+    console.log('-----------------------------------');
+    //4: filter过滤
+    b = a.filter((item, index) => {
+      return a.indexOf(item) === index
+    })
+    console.log(b);
+    console.log('-----------------------------------');
+    // 5：原生js双循环
+    for (let i = 0; i < a.length; i++) {
+      for (let j = i + 1; j < a.length; j++) {
+        if (a[i] === a[j]) {
+          i++;
+        }
+      }
+      c.push(a[i])
+    }
+    console.log(c);
+    console.log('-----------------------------------');
+    //6:通过对象唯一键值
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 标准盒子模型和ie盒子模型 -->
+  <style>
+    .a {
+      box-sizing: content-box;
+      width: 100px;
+      height: 100px;
+      padding: 50px;
+      border: 5px solid red;
+      margin: 50px;
+    }
+
+    /* width:100+50+50+5+5(width+padding+border) */
+    .b {
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      padding: 60px;
+      border: 5px solid red;
+      margin: 50px;
+    }
+
+    /* width：130px */
+    /* 如果padding+border< width那么width就是width如果大于就是padding+border */
+  </style>
+  <div class="a">1</div>
+  <div class="b">2</div>
+  <script>
+// 区别
+// 标准盒子模型：margin,border,padding,content
+// ie盒子模型:margin  content(border+padding+content)
+//通过css如何转换：
+// box-sizing: content-box;标准盒子模型
+// box-sizing: border-box;ie盒子模型
+  </script>
+</body>
+
+</html>

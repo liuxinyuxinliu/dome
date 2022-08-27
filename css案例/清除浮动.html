@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="a" id="main">
+    <div class="b"></diV>
+    <div class="c"></div>
+    <!-- <div class="d"></div> -->
+  </div>
+  <script>
+    //解决父盒子没设置高度，然后因为子盒子浮动而造成塌陷
+
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .a {
+      width: 300px;
+      background-color: red;
+    }
+
+    .b {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      float: left;
+    }
+
+    .c {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      float: left;
+    }
+
+    /* 1:在浮动的盒子后加一个盒子 */
+    /* .d {
+      clear: both;
+    } */
+
+    /* 2：给父盒子加伪元素 */
+    /* #main::after {
+      content: "";
+      display: block;
+      clear: both;
+    } */
+
+    /*3： BFC 块级格式化上下文 */
+    /* #main {
+      overflow: hidden;
+    } */
+
+    /* 4：给父盒子设置高度 */
+  </style>
+
+</body>
+
+</html>

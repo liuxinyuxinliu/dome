@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(n1, n2) {
+      let n11 = new Set(n1)
+      let n22 = [...new Set(n2)]
+      c = n22.filter((item) => {
+        return n11.has(item)
+      })
+
+      return c
+
+    }
+    console.log(fn([1, 1, 2, 3, 4, 5], [3, 3, 4, 1, 5]));
+  </script>
+</body>
+
+</html>

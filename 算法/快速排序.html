@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(n) {
+      if (n.length <= 1) return n
+      let left = []
+      let right = []
+      let mid = Math.floor(n.length / 2)
+      let piovt = n.splice(mid, 1)[0]
+      for (let i = 0; i < n.length; i++) {
+        if (n[i] > piovt) {
+          right.push(n[i])
+        } else {
+          left.push(n[i])
+        }
+
+      }
+      return fn(left).concat([piovt], fn(right))
+    }
+    console.log(fn([12, 56, 4, 78, 42, 1]));
+  </script>
+</body>
+
+</html>

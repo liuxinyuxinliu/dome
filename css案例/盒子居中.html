@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="a">
+    <div class="b"></div>
+  </div>
+
+  <div class="c">
+    <div class="d"></div>
+  </div>
+  <div class="e">
+    <div class="f"></div>
+  </div>
+  <div class="g">
+    <div class="h"></div>
+  </div>
+  <script>
+//a:子绝父相 子盒子，向左50%向下50%然后margin-top: -50px;margin-left: -50px;
+//c:子绝父相 子盒子，高50%左50%然后transform移动子盒子向左自身宽度50%
+//e:子绝父相 子盒子都是0 然后自适应
+//g:父盒子flex布局，添加   align-items: center;justify-content: center;
+  </script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .a {
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      position: relative;
+      float: left;
+    }
+
+    .b {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      margin-left: -50px;
+    }
+
+    .c {
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      position: relative;
+      float: left;
+      margin-left: 100px;
+    }
+
+    .d {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .e {
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      float: left;
+      margin-left: 100px;
+      position: relative;
+    }
+
+    .f {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+    }
+
+    .g {
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      float: left;
+      margin-left: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .h {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+    }
+  </style>
+</body>
+
+</html>

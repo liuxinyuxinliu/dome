@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(nums) {
+      let map = new Map()
+      for (const i of nums) {
+        if (map.has(i)) {
+          return true
+        }
+        map.set(i, 1)
+
+      }
+      return false
+
+    }
+    function fnn(nums) {
+      let set = new Set()
+      for (const i of nums) {
+        if (set.has(i)) {
+          return true
+        }
+        set.add(i)
+
+      }
+      return false
+
+    }
+
+    console.log(fn([1, 2, 5]));
+    console.log(fnn([1, 2, 2, 5]));
+  </script>
+</body>
+
+</html>

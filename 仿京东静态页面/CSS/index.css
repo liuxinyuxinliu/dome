@@ -1,0 +1,72 @@
+.main {}
+
+.tu {
+
+  float: left;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+
+.tu img {
+  width: 720px;
+  height: 455px;
+}
+
+.daohang {
+  width: 250px;
+  height: 455px;
+  margin-top: 10px;
+  border: 1px solid #f5f5f5;
+
+  float: right
+}
+
+.daohang .shang {
+  height: 165px;
+
+}
+
+.daohang .zhong {
+  height: 182px;
+
+
+}
+
+.daohang .xia img {
+  height: 70px;
+  width: 250px;
+  margin-top: 18px;
+}
+
+.shang .shang1 {
+  height: 51px;
+}
+
+.shang .shang1 .shang11 {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.shang .shang1 .shang12 {
+  float: right;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.shang .shang2 ul li {
+
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.zhong {
+  margin-top: 20px;
+}
+
+.zhong img {
+  height: 189px;
+  width: 250px;
+}

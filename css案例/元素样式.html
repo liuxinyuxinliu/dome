@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <style>
+    .a {
+      background-color: red;
+      display: inline;
+    }
+
+    .b {
+      background-color: blue;
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+
+    .c {
+      background-color: green;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <span>sdsada</span>
+  <div class="a">我是div 块级元素转换成行内元素</div>
+  <span>sdsada</span>
+  <p class="b">我是p 行内元素转换为块级元素</p>
+  <span>sdsada</span>
+  <div class="c">我是div 块级元素转换成行内块元素</div>
+  <span>sdsada</span>
+  <script>
+    //行内元素：span img input....
+    //块级元素：div h1-h5 p.....
+    //空元素：  br hr....
+    //display: inline;        把元素设置成行内元素，不独占一行，设置宽高不生效
+    //display: block;         把元素设置成块级元素，独占一行，能设置宽高
+    //display: inline-block;  把元素设置成行内块元素，不独占一行，能设置宽高
+
+
+  </script>
+</body>
+
+</html>

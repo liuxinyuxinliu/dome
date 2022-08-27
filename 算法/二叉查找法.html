@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var aa = [1, 3, 5, 6, 7, 8, 9, 10, 13, 17, 19, 20]
+    function chaozhao1(nums, target) {
+      let start = 0
+      let end = nums.length - 1
+      while (start <= end) {
+        let midindex = Math.floor((start + end) / 2)
+        let miditem = nums[midindex]
+
+        if (target == miditem) {
+          return midindex
+        } else if (target < miditem) {
+          end = midindex
+        } else if (target > miditem) {
+          start = midindex + 1
+        }
+      }
+    }
+    console.log(chaozhao1(aa, 17));
+    // --------------------------------------
+    function chazhao(a, b, c, d) {
+      if (c <= d) {
+        midindex = Math.floor((c + d) / 2)
+        miditem = aa[midindex]
+        if (miditem == a) {
+          return midindex
+          console.log(midindex);
+        }
+        else if (aa[midindex] > a) {
+
+          return chazhao(17, aa, c, midindex - 1)
+        }
+        else if (aa[midindex] < a) {
+
+          return chazhao(17, aa, midindex + 1, d)
+        }
+      }
+      return -1
+    }
+    console.log(chazhao(17, aa, 0, aa.length - 1));
+  </script>
+</body>
+
+</html>

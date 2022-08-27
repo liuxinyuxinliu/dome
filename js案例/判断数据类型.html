@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //typeof
+    console.log(typeof 10);
+    console.log(typeof true);
+    console.log(typeof 'hh');
+    console.log(typeof function () { });
+    console.log(typeof []);
+    console.log(typeof {});
+    console.log(typeof undefined);
+    console.log(typeof null);
+    console.log('-------------------------');
+    //instanceof
+    console.log(10 instanceof Number);
+    console.log(true instanceof Boolean);
+    console.log("hh" instanceof String);
+    console.log(function () { } instanceof Function);
+    console.log([] instanceof Array);
+    console.log({} instanceof Object);
+    console.log('-------------------------');
+    //constructor
+    console.log((10).constructor === Number);
+    console.log((true).constructor === Boolean);
+    console.log(("hh").constructor === String);
+    console.log((function () { }).constructor === Function);
+    console.log(([]).constructor === Array);
+    console.log(({}).constructor === Object);
+    console.log('-------------------------');
+    //Object.prototype.String.call()
+    var a = Object.prototype.toString
+    console.log(a.call(10));
+    console.log(a.call(true));
+    console.log(a.call("hh"));
+    console.log(a.call(function () { }));
+    console.log(a.call([]));
+    console.log(a.call({}));
+    console.log(a.call(undefined));
+    console.log(a.call(null));
+  </script>
+</body>
+
+</html>

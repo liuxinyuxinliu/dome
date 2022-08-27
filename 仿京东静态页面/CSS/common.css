@@ -1,0 +1,248 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.style_red {
+  color: red;
+}
+
+/*  快捷导航模块  */
+.shortcut {
+  height: 31px;
+  background-color: #f1f1f1;
+}
+
+.leftshortcut {
+  float: left;
+  line-height: 31px;
+}
+
+.leftshortcut>ul {
+  float: left;
+}
+
+.leftshortcut>ul>li {
+  float: left;
+}
+
+.rightshortcut {
+  float: right;
+  line-height: 31px;
+}
+
+.rightshortcut>ul>li {
+  float: right;
+
+}
+
+.shortcut .rightshortcut ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9px 15px 0px;
+}
+
+.header {
+  height: 105px;
+
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  width: 171px;
+  height: 61px;
+  background: url(../img/dd.png) no-repeat;
+}
+
+.logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  font-size: 0;
+}
+
+.search {
+  width: 538px;
+  height: 36px;
+  border: 2px solid #000;
+  position: absolute;
+  left: 346px;
+  top: 25px;
+}
+
+.search input {
+
+  width: 444px;
+  height: 36px;
+  padding-left: 10px;
+
+}
+
+.search button {
+
+  width: 80px;
+  height: 36px;
+  background-color: red;
+  color: #f1f1f1;
+}
+
+.hotwords {
+  position: absolute;
+  top: 70px;
+  left: 370px;
+}
+
+.hotwords ul a {
+  margin: 0 10px;
+}
+
+.shopcar {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  width: 140px;
+  height: 50px;
+  border: 1px solid red;
+  line-height: 50px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.nav {
+  height: 47px;
+  border-bottom: 1px solid red;
+  margin-top: 10px;
+}
+
+.you {
+  float: left;
+
+
+}
+
+.you ul li {
+
+  float: left;
+
+}
+
+.you ul li a {
+  display: block;
+  height: 47px;
+  margin: 0 20px;
+  font-size: 20px;
+  line-height: 47px;
+}
+
+.zuo {
+  height: 47px;
+  width: 210px;
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  background-color: red;
+}
+
+.zuo dt {
+  width: 100%;
+  height: 100%;
+  line-height: 47px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.zuo dd {
+  width: 210px;
+  height: 466px;
+  background-color: red;
+
+}
+
+
+
+.zuo .dd ul li {
+  margin-left: 2px;
+  height: 31px;
+  line-height: 31px;
+}
+
+.zuo .dd ul li:hover {
+  background-color: #fff;
+
+}
+
+.zuo .dd ul li a {
+  margin-left: 10px;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+}
+
+.zuo .dd ul li a:hover {
+  color: red;
+}
+
+.footer {
+  margin-top: 490px;
+  height: 415px;
+  border-top: 1px solid red;
+
+  background-color: #f5f5f5;
+}
+
+.footer .mod_service {
+  margin-top: 20px;
+
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer .mod_service ul li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  padding-left: 80px;
+  font-size: 16px;
+}
+
+.mod_help {
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mod_help dl {
+  float: left;
+
+
+}
+
+.mod_help dl dt {
+
+  font-size: 24px;
+  margin: 0px 45px;
+}
+
+.mod_help dl dd a {
+  font-size: 14px;
+  margin: 0px 62px;
+}
+
+.mod_help dl dd img {
+
+  margin-left: 22px;
+}
+
+.mod_copyright {
+  height: 200px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}

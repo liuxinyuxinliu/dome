@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //通过Object.prototype.toString.call()方法
+    console.log(Object.prototype.toString.call([]).slice(8, -1) === 'Array');
+    //通过instanceof方法
+    console.log([] instanceof Array);
+    //通过原型链判断 对象的隐式原型等于构造函数的显式原型
+    console.log([].__proto__ === Array.prototype);
+    //通过es6的Array.isArray方法
+    console.log(Array.isArray([]));
+    //通过Array.prototype.isPrototypeOf判断
+    console.log(Array.prototype.isPrototypeOf([]));
+  </script>
+</body>
+
+</html>
