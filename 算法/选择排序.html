@@ -12,21 +12,16 @@
   <script>
     function fn(n) {
       let minindex = 0
-
       for (let i = 0; i < n.length - 1; i++) {
         minindex = i
         for (let j = i + 1; j < n.length; j++) {
           if (n[j] < n[minindex]) {
             minindex = j
           }
-
         }
-
-
         let temp = n[i]
         n[i] = n[minindex]
         n[minindex] = temp
-
       }
       return n
     }
